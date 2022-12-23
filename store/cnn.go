@@ -19,7 +19,7 @@ func Connect() *Store {
 		log.Fatal(err)
 	}
 
-	db := client.Database("AuthDB")
+	db := client.Database("data")
 
 	return &Store{
 		localColl: db.Collection("person"),
